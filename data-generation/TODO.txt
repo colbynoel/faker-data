@@ -1,0 +1,14 @@
+1. For the things that Faker can generate, let it generate it. Otherwise, utilize an LLM to create some fake data. Spin up LM studio to do a majority of the work.
+
+2. Figure out a way to create a relationship with all of the tables while generating the fake data.
+
+3. Create a local database to store the fake data
+
+4. Create a fastapi service around the fake data to query it.
+
+5. Create authentication around the api service (not really, but kinda)
+
+6. Dockerize and Kubernetes 
+
+7. Create terraform code to spin up the service
+
