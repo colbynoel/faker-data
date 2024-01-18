@@ -9,10 +9,8 @@ class ProductGroup(BaseModel):
     
 class ProductIndividual(BaseModel):
     product_name: str
-    upc: int
-    inventory: int
+    upc: str
     distributor: str
-    reviews: list[str]
     color: str
     size: str
 
@@ -42,6 +40,7 @@ class Employee(BaseModel):
     salary: float
     job_title: str
     time_employed: int
+    employer: str
 
 class Purchaser(BaseModel):
     name: str

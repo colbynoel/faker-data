@@ -1,4 +1,4 @@
-1. For the things that Faker can generate, let it generate it. Otherwise, utilize an LLM to create some fake data. Spin up LM studio to do a majority of the work.
+1. For the things that Faker can generate, let it generate it. Otherwise, utilize an LLM to create some fake data. Use LlamaFile to generate the reviews
 
 2. Figure out a way to create a relationship with all of the tables while generating the fake data.
 
