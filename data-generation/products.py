@@ -21,12 +21,12 @@ def genProductGroups():
     file = open("assets/products.txt", "r")
     products = file.read().split("\n")[:-1]
 
-    while True:
+    while len(products) > 0:
         end_range = 0
         fake_company = fake.company()
-        if len(products) == 0:
-            break
-        elif len(products) >= 5:
+        print(fake_company)
+        print(len(products))
+        if len(products) >= 5:
             end_range = 5
         elif len(products) < 5:
             end_range = len(products)
