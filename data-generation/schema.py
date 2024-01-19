@@ -20,7 +20,6 @@ class Address(BaseModel):
     state: str
     city: str
     phone_number: str
-    name: str
 
 class Cards(BaseModel):
     card_holder: str
@@ -39,7 +38,7 @@ class Employee(BaseModel):
     name: str
     salary: float
     job_title: str
-    time_employed: int
+    time_employed: str
     employer: str
 
 class Purchaser(BaseModel):

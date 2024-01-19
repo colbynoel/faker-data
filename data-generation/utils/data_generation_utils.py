@@ -39,3 +39,6 @@ def get_random_product_size(ran_num: int) -> str:
     sizes = ["xxs", "xs", "s", "m", "l", "xl", "xxl", "xxxl", "xxxxl"]
 
     return sizes[ran_num]
+
+def time_worked() -> str:
+    return f"{random.randint(0, 47)}Y{random.randint(0, 11)}M{random.randint(0,31)}D"
