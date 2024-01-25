@@ -24,8 +24,8 @@ class Address(BaseModel):
 class Cards(BaseModel):
     card_holder: str
     card_name: str
-    card_number: int
-    security_number: int
+    card_number: str
+    security_number: str
     expiration_date: str
 
 class Distributor(BaseModel):

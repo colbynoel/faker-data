@@ -42,3 +42,19 @@ def get_random_product_size(ran_num: int) -> str:
 
 def time_worked() -> str:
     return f"{random.randint(0, 47)}Y{random.randint(0, 11)}M{random.randint(0,31)}D"
+
+def card_name(card_int: int) -> str:
+    card_names = ["Master card", "Visa", "Amex", "Discover", "JCB", "Diners Club", "UnionPay", "Maestro", "RuPay"]
+
+    return card_names[card_int]
+
+def card_number() -> str:
+    number = ''.join(str(random.randint(0, 9)) for _ in range(16))
+    
+    formatted_number = ' '.join(number[i:i+4] for i in range(0, len(number), 4))
+    return formatted_number
+
+def security_code():
+    security_code = ''.join([str(random.randint(0,9)) for _ in range(3)])
+
+    return security_code

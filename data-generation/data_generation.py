@@ -114,10 +114,19 @@ def gen_address():
 #     security_number: int
 #     expiration_date: str
 
+def gen_cards(purchaser: str):
+    card = Cards(
+            card_holder = purchaser,
+            card_name = card_name(random.randint(0,8)),
+            card_number = card_number(),
+            security_number = security_code(),
+            expiration_date = fake.date())
+    return card
+
 
 
 if __name__ == "__main__":
     # product_groups, distributors = generate_product_group_and_distributor()
     # product_individuals = gen_product_individual(product_groups)
     # employees = gen_employees(distributors)
-    print(gen_address())
+    print(gen_cards("Colby"))
