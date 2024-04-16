@@ -123,6 +123,21 @@ def gen_cards(purchaser: str):
             expiration_date = fake.date())
     return card
 
+# class Purchaser(BaseModel):
+#     name: str
+#     purchase_history: list[ProductIndividual]
+#     reviews: list[str]
+#     shopping_cart: list[ProductIndividual]
+#     shipping_information: list[Address]
+#     cards: list[Cards]
+#     billing_information: list[Address]
+#     wishlist: list[ProductGroup]
+
+def gen_purchaser(product_individuals: list, product_groups: list, employees: list):
+    for _ in range(1_000_000):
+        :
+
+
 
 
 if __name__ == "__main__":
